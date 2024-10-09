@@ -1,0 +1,255 @@
+/*-------------------------- HOME PAGE CSS ------------------------------------------------*/
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+  background-image: linear-gradient(to right, rgba(23, 162, 184, 0.8), rgba(0, 123, 255, 0.8));
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  color: #f8f9fa;
+}
+
+.btn-lg {
+  font-size: 1.25rem;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-lg:hover {
+  background-color: #0056b3;
+  transform: translateY(-5px);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in {
+  animation: slideIn 1s ease-out forwards;
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-bounce-in {
+  animation: bounceIn 0.5s ease-out forwards;
+}
+
+/* Features Section */
+.features-section {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.feature-card {
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+/* Call to Action Section */
+.cta-section {
+  background-color: #ffffff;
+  padding: 60px 0;
+}
+
+.cta-section .section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.cta-section a {
+  font-size: 1.25rem;
+  padding: 12px 35px;
+  background-color: #007bff;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-section a:hover {
+  background-color: #0056b3;
+  transform: translateY(-5px);
+}
+
+/* --------------------- NAVBAR CSS --------------------------------------------- */
+/* Navbar when at the top (not scrolling) */
+.navbar-colored {
+  background-color: #343a40; /* Dark background */
+  transition: background-color 0.3s ease;
+}
+
+/* Navbar when scrolling */
+.navbar-transparent {
+  background-color: transparent; /* Transparent background */
+  transition: background-color 0.3s ease;
+}
+
+/* Other navbar styling */
+.navbar {
+  padding: 10px 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #ffffff;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #f0ad4e;
+}
+
+/* Animation for Fade-in Effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+/* Contact Us Page */
+.contact-container {
+  background-image: linear-gradient(to right, rgba(23, 162, 184, 0.8), rgba(0, 123, 255, 0.8));
+  color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-title {
+  color: white;
+  font-size: 50px;
+}
+
+.contact-description {
+  margin-bottom: 20px;
+  color: black;
+  font-size: 20px;
+}
+
+.contact-info .info-item {
+  margin-bottom: 20px;
+  color: black;
+  font-size: 20px;
+}
+
+/* Blogs Page */
+.card {
+  border-radius: 10px;
+}
+
+.card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  color: #007bff;
+}
+
+/* About Us Page */
+.about-container {
+  background-image: linear-gradient(to right, rgba(23, 162, 184, 0.8), rgba(0, 123, 255, 0.8));
+  color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-title {
+  color: white;
+  font-size: 50px;
+}
+
+.about-description {
+  margin-bottom: 20px;
+  color: black;
+  font-size: 20px;
+}
+
+/* Back Button */
+.back-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #0056b3;
+}
